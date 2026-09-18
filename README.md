@@ -49,6 +49,18 @@ It is built entirely with Firefox's supported theme API. There are no scripts, b
 
 Temporary themes are removed when Firefox restarts. Packaged builds are available from [GitHub Releases](https://github.com/vantalter/aerofoil/releases).
 
+## Build and validate
+
+Aerofoil keeps its toolbar artwork reproducible. The source generator creates the light and dark preview files in `src/` and the six sliced assets consumed by Firefox.
+
+```sh
+node scripts/generate-frames.mjs
+node scripts/validate.mjs
+bash scripts/package.sh
+```
+
+The packaged theme is written to `dist/aerofoil-<version>.zip`. Documentation, screenshots, design sources, and development scripts are excluded from the archive. Every push is validated by GitHub Actions, and a tag matching the manifest version (for example, `v1.0.0`) publishes the package to GitHub Releases.
+
 ## Project notes
 
 Aerofoil is inspired by the refined Liquid Glass direction of macOS 27 Golden Gate, but it is an independent Firefox theme and does not include Apple software or assets.

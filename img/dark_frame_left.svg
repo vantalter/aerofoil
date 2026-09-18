@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="200" viewBox="0 0 50 200">
   <defs>
     <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#2F2E33"/><stop offset=".42" stop-color="#28272C"/><stop offset="1" stop-color="#242328"/></linearGradient>
-    <linearGradient id="glass" x1="0" y1="48" x2="0" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#4D4C53" stop-opacity=".92"/><stop offset=".48" stop-color="#3A393F" stop-opacity=".9"/><stop offset="1" stop-color="#313036" stop-opacity=".96"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="48" x2="0" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#4D4C53" stop-opacity=".92"/><stop offset=".52" stop-color="#3A393F" stop-opacity=".9"/><stop offset="1" stop-color="#313036" stop-opacity=".96"/></linearGradient>
     <radialGradient id="sheen" cx="0" cy="0" r="1" gradientTransform="translate(15 51) rotate(66) scale(35 27)" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".2"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
     <filter id="lift" x="-25%" y="-45%" width="160%" height="190%"><feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity=".55"/></filter>
   </defs>
