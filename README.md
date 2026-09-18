@@ -1,12 +1,6 @@
 <p align="center">
-  <img src="docs/aerofoil-hero.png" alt="A translucent aerofoil sweeping from light into dark" width="100%">
+  <img src="docs/aerofoil-hero-lockup-sf.png" alt="Aerofoil: a translucent aerofoil sweeping from light into dark" width="100%">
 </p>
-
-<p align="center">
-  <img src="img/icon_x128.png" alt="Aerofoil icon" width="88">
-</p>
-
-<h1 align="center">Aerofoil</h1>
 
 <p align="center">
   A lighter, sharper Firefox theme shaped by glass, motion, and macOS 27.
