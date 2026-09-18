@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aerofoil</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+      --ink: #1d1d1f;
+      --muted: #67676d;
+      --glass: rgb(255 255 255 / 58%);
+      --line: rgb(255 255 255 / 72%);
+      --shadow: rgb(38 46 61 / 16%);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 18%, rgb(255 255 255 / 92%), transparent 31%),
+        radial-gradient(circle at 72% 68%, rgb(0 126 255 / 24%), transparent 34%),
+        linear-gradient(128deg, #e9edf3 0%, #c9d3df 48%, #566575 100%);
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 43% -12% auto 8%;
+      height: 26vh;
+      border-radius: 50%;
+      background: linear-gradient(170deg, rgb(255 255 255 / 70%), rgb(136 197 255 / 15%) 48%, rgb(8 26 48 / 45%));
+      border: 1px solid rgb(255 255 255 / 64%);
+      box-shadow: 0 25px 80px rgb(18 30 50 / 25%), inset 0 2px 8px rgb(255 255 255 / 74%);
+      transform: rotate(-6deg) skewX(-18deg);
+    }
+    main {
+      position: relative;
+      z-index: 1;
+      width: min(1080px, calc(100% - 64px));
+      margin: 0 auto;
+      padding-top: 11vh;
+    }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #0068d4;
+    }
+    h1 {
+      max-width: 760px;
+      margin: 14px 0 18px;
+      font-size: clamp(58px, 8vw, 104px);
+      line-height: .94;
+      letter-spacing: -.065em;
+      font-weight: 720;
+    }
+    .lede {
+      max-width: 580px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.45;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 8vh;
+    }
+    .card {
+      min-height: 132px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--glass);
+      box-shadow: 0 16px 45px var(--shadow), inset 0 1px rgb(255 255 255 / 70%);
+      backdrop-filter: blur(24px) saturate(135%);
+    }
+    .card strong { display: block; margin-bottom: 8px; font-size: 16px; }
+    .card span { color: var(--muted); font-size: 14px; line-height: 1.4; }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f5f5f7;
+        --muted: #b1b1b8;
+        --glass: rgb(42 46 54 / 66%);
+        --line: rgb(255 255 255 / 16%);
+        --shadow: rgb(0 0 0 / 36%);
+      }
+      body {
+        background:
+          radial-gradient(circle at 18% 18%, rgb(128 145 166 / 32%), transparent 31%),
+          radial-gradient(circle at 72% 68%, rgb(0 104 212 / 30%), transparent 34%),
+          linear-gradient(128deg, #252a32 0%, #151a21 52%, #07090d 100%);
+      }
+      .eyebrow { color: #66adff; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">A Firefox theme for macOS</div>
+    <h1>Move through the web lightly.</h1>
+    <p class="lede">Aerofoil brings focused contrast, quiet depth, and a continuous glass toolbar to Firefox.</p>
+    <div class="cards">
+      <div class="card"><strong>Unified</strong><span>One continuous material across tabs, navigation, and controls.</span></div>
+      <div class="card"><strong>Adaptive</strong><span>Purpose-built light and dark appearances tuned independently.</span></div>
+      <div class="card"><strong>Native</strong><span>System typography, restrained color, and familiar interaction states.</span></div>
+    </div>
+  </main>
+</body>
+</html>

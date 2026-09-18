@@ -1,10 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="200" viewBox="0 0 50 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200">
   <defs>
     <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#F3F3F5"/><stop offset=".42" stop-color="#E9E9EC"/><stop offset="1" stop-color="#E4E5E8"/></linearGradient>
     <linearGradient id="glass" x1="0" y1="48" x2="0" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".92"/><stop offset=".52" stop-color="#FFFFFF" stop-opacity=".72"/><stop offset="1" stop-color="#F9FAFC" stop-opacity=".82"/></linearGradient>
     <radialGradient id="sheen" cx="0" cy="0" r="1" gradientTransform="translate(15 51) rotate(66) scale(35 27)" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".88"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
-    <filter id="lift" x="-10%" y="-45%" width="120%" height="190%"><feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#656872" flood-opacity=".24"/></filter>
+    <filter id="lift" x="-2%" y="-45%" width="104%" height="190%"><feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#656872" flood-opacity=".24"/></filter>
   </defs>
-  <rect width="50" height="200" fill="url(#chrome)"/><rect width="50" height="45" fill="#FAFAFB" fill-opacity=".36"/><rect y="45" width="50" height="1" fill="#FFFFFF" fill-opacity=".58"/>
-  <g filter="url(#lift)"><path fill="url(#glass)" d="M-4 48h58v40H-4z"/><path fill="#FFFFFF" fill-opacity=".78" d="M-4 48h58v1H-4zM-4 87h58v1H-4z"/><path fill="#FFFFFF" fill-opacity=".24" d="M-4 49h58v7H-4z"/></g>
+  <rect width="1200" height="200" fill="url(#chrome)"/><rect width="1200" height="45" fill="#FAFAFB" fill-opacity=".36"/><rect y="45" width="1200" height="1" fill="#FFFFFF" fill-opacity=".58"/>
+  <g filter="url(#lift)">
+    <rect x="6" y="48" width="1188" height="40" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".78"/>
+    <path fill="#FFFFFF" fill-opacity=".24" d="M26 49h1148a19 19 0 0 1 18 12c-4-4-10-6-18-6H26c-8 0-14 2-18 6a19 19 0 0 1 18-12Z"/>
+  </g>
 </svg>
