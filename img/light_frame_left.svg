@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="200" viewBox="0 0 50 200">
+  <defs>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#F3F3F5"/><stop offset=".42" stop-color="#E9E9EC"/><stop offset="1" stop-color="#E4E5E8"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="48" x2="0" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".92"/><stop offset=".52" stop-color="#FFFFFF" stop-opacity=".72"/><stop offset="1" stop-color="#F9FAFC" stop-opacity=".82"/></linearGradient>
+    <radialGradient id="sheen" cx="0" cy="0" r="1" gradientTransform="translate(15 51) rotate(66) scale(35 27)" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".88"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <filter id="lift" x="-25%" y="-45%" width="160%" height="190%"><feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#656872" flood-opacity=".24"/></filter>
+  </defs>
+  <rect width="50" height="200" fill="url(#chrome)"/><rect width="50" height="45" fill="#FAFAFB" fill-opacity=".36"/><rect y="45" width="50" height="1" fill="#FFFFFF" fill-opacity=".58"/>
+  <g filter="url(#lift)"><path fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".78" d="M25 48h35v40H25C14.5 88 6 79 6 68s8.5-20 19-20Z"/><path fill="url(#sheen)" d="M25 49h35v7H25c-7.4 0-13.8 4.6-16.8 11.2C8.6 57.1 15.9 49 25 49Z"/></g>
+</svg>
